@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Form</title>
+  <script src="register.js"></script> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+	<!-- <style type='text/css'>
+		form, nav{
+		  margin-left: 500px;
+		  margin-right: 500px;
+		  border-style: hidden;
+		  border-color: #7d7d7d;
+		}
+		</style> -->
+</head>
+
+<body>
+  <nav class="navbar " style="background:#4fd4dd;">
+    <i class='fa fa-graduation-cap'></i>
+    <a href="#" class="navbar-brand">Sign Up</a>
+    <ul class="navbar-nav">
+      <li class="nav-items">
+        <a href="#" class="nav-link">
+          <i class="fa fa-times"></i></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <form name="myForm1" onsubmit="return registerValidation()" action="login.html" method="post">
+    <div class="form-group">
+      <div class="input-group">
+        <input type="text" class="form-control" id="InputUser" placeholder="First name">
+        <i class="fa fa-user-circle input-icon" aria-hidden="true"></i>
+      </div>
+    </div>
+    <span id="checkUser" class="text-danger font-weight-bold"> </span>
+
+    <div class="form-group">
+      <div class="input-group">
+        <input type="text" class="form-control" id="InputName" placeholder="Last name">
+        <i class="fa fa-user input-icon" aria-hidden="true"></i>
+      </div>
+    </div>
+    <span id="checkName" class="text-danger font-weight-bold"> </span>
+
+	<div class="form-group">
+      <div class="input-group">
+        <input type="text" class="form-control" id="InputEmail" placeholder="mail@example.com">
+        <i class="fa fa-envelope input-icon" aria-hidden="true"></i>
+      </div>
+    </div>
+    <span id="emailids" class="text-danger font-weight-bold"> </span>
+
+    <div class="form-group">
+      <div class="input-group">
+        <input type="text" class="form-control" id="InputPhone" placeholder="Mobile Number">
+        <i class="fa fa-mobile input-icon" aria-hidden="true"></i>
+      </div>
+    </div>
+    <span id="checkPhone" class="text-danger font-weight-bold"> </span>
+
+    <div class="form-group">
+      <div class="input-group">
+        <input type="password" class="form-control" id="InputPassword" placeholder="password">
+        <i class="fa fa-unlock-alt input-icon" aria-hidden="true"></i>
+      </div>
+    </div>
+    <span id="passw" class="text-danger font-weight-bold"> </span>
+
+    <div class="form-group">
+      <div class="input-group">
+        <input type="password" class="form-control" id="InputConfirmPassword" placeholder="password">
+        <i class="fa fa-lock input-icon" aria-hidden="true"></i>
+      </div>
+    </div>
+    <span id="checkConfirm" class="text-danger font-weight-bold"> </span>
+
+    <button type="submit" name="submit" class="btn  btn-block btn-signIn">SIGN UP</button>
+  
+  </form>
+  
+</body>
+</html>
